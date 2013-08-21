@@ -1,0 +1,18 @@
+This is your new Play 2.1 application
+=====================================
+
+Greg Play Angular Application
+
+This file will be packaged with your application, when using `play dist`.
+
+Contains :
+
+Play2 application
+Native Less compile
+Boostrap 3.0
+
+TODO :
+
+- intregrate Angularjs (+ requirejs)
+- demo angularjs
+
