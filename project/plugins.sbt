@@ -5,10 +5,10 @@ logLevel := Level.Warn
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 // Lessc Play Plugin repository https://github.com/jmparsons/play-lessc
-resolvers += "JMParsons Releases" at "http://jmparsons.github.io/releases/"
+//resolvers += "JMParsons Releases" at "http://jmparsons.github.io/releases/"
 
 // Use the Play sbt plugin for Play projects
-addSbtPlugin("play" % "sbt-plugin" % "2.1.3")
+addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.2.0")
 
 // Lessc Play Plugin
-addSbtPlugin("com.jmparsons" % "play-lessc" % "0.0.8")
+//addSbtPlugin("com.jmparsons" % "play-lessc" % "0.1.0")
