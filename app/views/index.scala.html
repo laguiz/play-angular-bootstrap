@@ -10,8 +10,8 @@
         <!-- App CSS -->
         <link rel="stylesheet" media="all" href="@routes.Assets.at("stylesheets/app/app-main.min.css")">
 
-        <script src="@routes.Assets.at("javascripts/jquery/lib/jquery-1.9.1.min.js")" type="text/javascript"></script>
-
+        @helper.requireJs(core = routes.Assets.at("javascripts/require.js").url, module = routes.Assets.at("javascripts/app-main").url)
+        
     </head>
     <body>
         

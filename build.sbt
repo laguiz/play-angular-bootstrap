@@ -4,6 +4,8 @@ name := "play-angular-bootstrap"
 
 version := "1.0-SNAPSHOT"
 
+play.Project.playJavaSettings
+
 libraryDependencies ++= Seq(
   javaJdbc,
   javaEbean,
@@ -12,8 +14,6 @@ libraryDependencies ++= Seq(
   "commons-collections" % "commons-collections" % "3.2.1",
   "org.apache.commons" % "commons-lang3" % "3.1"
 )     
-
-play.Project.playJavaSettings
 
 def customLessEntryPoints(base: File): PathFinder = (
     //Compile Boostrap CSS
@@ -25,3 +25,5 @@ def customLessEntryPoints(base: File): PathFinder = (
 )
     
 lessEntryPoints <<= baseDirectory(customLessEntryPoints)
+
+requireJs += "app-main.js"
